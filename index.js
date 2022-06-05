@@ -13,7 +13,7 @@ const sorter = function(daftarNama, cbMelakukanSorting){
     let penamaanBaru = i + 1 + ". " + sortingan[i]
     sortinganBaru.push(penamaanBaru);
   }
-  return [sortinganBaru];
+  return sortinganBaru;
 };
 
 
@@ -26,7 +26,7 @@ const sortAscending = function (dataArray){
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
 const sortDescending = function (dataArray){
-  return dataArray.reverse();
+  return dataArray.sort().reverse();
 };
 
 // ! JANGAN DIMODIFIKASI
